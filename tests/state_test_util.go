@@ -23,22 +23,22 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/sha3"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/common/hexutil"
+	"github.com/wuyazero/go-ethereum/common/math"
+	"github.com/wuyazero/go-ethereum/core"
+	"github.com/wuyazero/go-ethereum/core/state"
+	"github.com/wuyazero/go-ethereum/core/types"
+	"github.com/wuyazero/go-ethereum/core/vm"
+	"github.com/wuyazero/go-ethereum/crypto"
+	"github.com/wuyazero/go-ethereum/crypto/sha3"
+	"github.com/wuyazero/go-ethereum/ethdb"
+	"github.com/wuyazero/go-ethereum/params"
+	"github.com/wuyazero/go-ethereum/rlp"
 )
 
 // StateTest checks transaction processing without block context.
-// See https://github.com/ethereum/EIPs/issues/176 for the test format specification.
+// See https://github.com/wuyazero/EIPs/issues/176 for the test format specification.
 type StateTest struct {
 	json stJSON
 }
@@ -229,7 +229,7 @@ func (tx *stTransaction) toMessage(ps stPostState) (core.Message, error) {
 	dataHex := tx.Data[ps.Indexes.Data]
 	valueHex := tx.Value[ps.Indexes.Value]
 	gasLimit := tx.GasLimit[ps.Indexes.Gas]
-	// Value, Data hex encoding is messy: https://github.com/ethereum/tests/issues/203
+	// Value, Data hex encoding is messy: https://github.com/wuyazero/tests/issues/203
 	value := new(big.Int)
 	if valueHex != "0x" {
 		v, ok := math.ParseBig256(valueHex)

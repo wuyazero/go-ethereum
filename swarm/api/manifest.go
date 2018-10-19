@@ -27,11 +27,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/wuyazero/go-ethereum/swarm/storage/feed"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/swarm/log"
+	"github.com/wuyazero/go-ethereum/swarm/storage"
 )
 
 const (

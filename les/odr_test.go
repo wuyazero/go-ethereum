@@ -23,17 +23,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/common/math"
+	"github.com/wuyazero/go-ethereum/core"
+	"github.com/wuyazero/go-ethereum/core/rawdb"
+	"github.com/wuyazero/go-ethereum/core/state"
+	"github.com/wuyazero/go-ethereum/core/types"
+	"github.com/wuyazero/go-ethereum/core/vm"
+	"github.com/wuyazero/go-ethereum/ethdb"
+	"github.com/wuyazero/go-ethereum/light"
+	"github.com/wuyazero/go-ethereum/params"
+	"github.com/wuyazero/go-ethereum/rlp"
 )
 
 type odrTestFn func(ctx context.Context, db ethdb.Database, config *params.ChainConfig, bc *core.BlockChain, lc *light.LightChain, bhash common.Hash) []byte

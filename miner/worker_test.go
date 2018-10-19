@@ -21,17 +21,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/consensus"
+	"github.com/wuyazero/go-ethereum/consensus/clique"
+	"github.com/wuyazero/go-ethereum/consensus/ethash"
+	"github.com/wuyazero/go-ethereum/core"
+	"github.com/wuyazero/go-ethereum/core/types"
+	"github.com/wuyazero/go-ethereum/core/vm"
+	"github.com/wuyazero/go-ethereum/crypto"
+	"github.com/wuyazero/go-ethereum/ethdb"
+	"github.com/wuyazero/go-ethereum/event"
+	"github.com/wuyazero/go-ethereum/params"
 )
 
 var (

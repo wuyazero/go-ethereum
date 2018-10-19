@@ -23,11 +23,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	p2ptest "github.com/ethereum/go-ethereum/p2p/testing"
+	"github.com/wuyazero/go-ethereum/log"
+	"github.com/wuyazero/go-ethereum/p2p"
+	"github.com/wuyazero/go-ethereum/p2p/enode"
+	"github.com/wuyazero/go-ethereum/p2p/protocols"
+	p2ptest "github.com/wuyazero/go-ethereum/p2p/testing"
 )
 
 const (

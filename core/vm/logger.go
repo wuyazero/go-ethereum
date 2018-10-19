@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/common/hexutil"
+	"github.com/wuyazero/go-ethereum/common/math"
+	"github.com/wuyazero/go-ethereum/core/types"
 )
 
 // Storage represents a contract's storage.

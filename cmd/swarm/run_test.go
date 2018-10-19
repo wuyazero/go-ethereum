@@ -33,13 +33,13 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm"
+	"github.com/wuyazero/go-ethereum/accounts"
+	"github.com/wuyazero/go-ethereum/accounts/keystore"
+	"github.com/wuyazero/go-ethereum/internal/cmdtest"
+	"github.com/wuyazero/go-ethereum/node"
+	"github.com/wuyazero/go-ethereum/p2p"
+	"github.com/wuyazero/go-ethereum/rpc"
+	"github.com/wuyazero/go-ethereum/swarm"
 )
 
 var loglevel = flag.Int("loglevel", 3, "verbosity of logs")

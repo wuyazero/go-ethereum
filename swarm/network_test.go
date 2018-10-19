@@ -28,14 +28,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/network/simulation"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/wuyazero/go-ethereum/crypto"
+	"github.com/wuyazero/go-ethereum/log"
+	"github.com/wuyazero/go-ethereum/node"
+	"github.com/wuyazero/go-ethereum/p2p/enode"
+	"github.com/wuyazero/go-ethereum/p2p/simulations/adapters"
+	"github.com/wuyazero/go-ethereum/swarm/api"
+	"github.com/wuyazero/go-ethereum/swarm/network/simulation"
+	"github.com/wuyazero/go-ethereum/swarm/storage"
 	colorable "github.com/mattn/go-colorable"
 )
 

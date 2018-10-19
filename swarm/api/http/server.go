@@ -35,12 +35,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/wuyazero/go-ethereum/common"
+	"github.com/wuyazero/go-ethereum/metrics"
+	"github.com/wuyazero/go-ethereum/swarm/api"
+	"github.com/wuyazero/go-ethereum/swarm/log"
+	"github.com/wuyazero/go-ethereum/swarm/storage"
+	"github.com/wuyazero/go-ethereum/swarm/storage/feed"
 
 	"github.com/rs/cors"
 )

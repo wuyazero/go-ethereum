@@ -26,8 +26,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/light"
+	"github.com/wuyazero/go-ethereum/common/mclock"
+	"github.com/wuyazero/go-ethereum/light"
 )
 
 var (

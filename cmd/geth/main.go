@@ -29,16 +29,17 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/wuyazero/go-ethereum/accounts"
+	"github.com/wuyazero/go-ethereum/accounts/keystore"
+	"github.com/wuyazero/go-ethereum/cmd/utils"
+	"github.com/wuyazero/go-ethereum/console"
+	"github.com/wuyazero/go-ethereum/eth"
+	"github.com/wuyazero/go-ethereum/ethclient"
+	"github.com/wuyazero/go-ethereum/internal/debug"
+	"github.com/wuyazero/go-ethereum/log"
+	"github.com/wuyazero/go-ethereum/metrics"
+	"github.com/wuyazero/go-ethereum/node"
+	"github.com/wuyazero/go-ethereum/spv"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -251,6 +252,8 @@ func init() {
 }
 
 func main() {
+	fmt.Println("Hello")
+	spv.SPVTest("World")
 	if err := app.Run(os.Args); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
