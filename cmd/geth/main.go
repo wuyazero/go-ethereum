@@ -252,8 +252,7 @@ func init() {
 }
 
 func main() {
-	fmt.Println("Hello")
-	spv.SPVTest("World")
+	spv.SpvInit()
 	if err := app.Run(os.Args); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)

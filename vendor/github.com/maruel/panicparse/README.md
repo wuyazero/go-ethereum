@@ -6,6 +6,7 @@ stack traces. Helps debugging crashes and deadlocks in heavily parallelized
 process.
 
 [![Build Status](https://travis-ci.org/maruel/panicparse.svg?branch=master)](https://travis-ci.org/maruel/panicparse)
+[![Go Report Card](https://goreportcard.com/badge/github.com/maruel/panicparse)](https://goreportcard.com/report/github.com/maruel/panicparse)
 
 panicparse helps make sense of Go crash dumps:
 
@@ -15,7 +16,7 @@ panicparse helps make sense of Go crash dumps:
 Features
 --------
 
-   * >50% more compact output than original stack dump yet more readable.
+   * &gt;50% more compact output than original stack dump yet more readable.
    * Exported symbols are bold, private symbols are darker.
    * Stdlib is green, main is yellow, rest is red.
    * Deduplicates redundant goroutine stacks. Useful for large server crashes.
@@ -23,8 +24,9 @@ Features
    * Pushes stdlib-only stacks at the bottom to help focus on important code.
    * Usable as a library!
      [![GoDoc](https://godoc.org/github.com/maruel/panicparse/stack?status.svg)](https://godoc.org/github.com/maruel/panicparse/stack)
-     * Warning: please pin the version (e.g. vendor it). Breaking changes are
-       not planned but may happen.
+     * Warning: please pin the major version (i.e. vendor it via
+       [dep](https://github.com/golang/dep)) as breaking changes happen on
+       [major version update](https://semver.org/).
    * Parses the source files if available to augment the output.
    * Works on Windows.
 
@@ -118,6 +120,22 @@ done that.
 
 ### If you have `/usr/bin/pp` installed
 
-You may have the Perl PAR Packager installed. Use long name `panicparse` then;
+If you try `pp` for the first time and you get:
+
+    Creating tables and indexes...
+    Done.
+
+and/or
+
+    /usr/bin/pp5.18: No input files specified
+
+you may be running the _Perl PAR Packager_ instead of panicparse.
+
+You have two choices, either you put `$GOPATH/bin` at the begining of `$PATH` or
+use long name `panicparse` with:
 
     go get github.com/maruel/panicparse
+
+then using `panicparse` instead of `pp`:
+
+    go test 2> panicparse

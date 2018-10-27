@@ -4,7 +4,6 @@ package gosigar
 
 import (
 	"io/ioutil"
-	"runtime"
 	"strconv"
 	"strings"
 	"unsafe"
